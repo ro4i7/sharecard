@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <img class="photo" src="./assets/rohit.png" alt="user"/>
+        
+            <div class="username">
+                <h2>Rohit Raj</h2>
+            </div>
+            <div class="position">
+                <h2>Developer & Security Enthusiast</h2>
+            </div>
+            <div class="button-group">
+                <button onclick="openModel()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div Share My Card></div>
+                </button>
+                
+                <button class="btn-follow btn-card">Follow Me</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="model">
+        <div class="model-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModel()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+        <div>
+            <h3>Share this Via</h3>
+            <div class="icon-container">
+                <a href="" class="icon" id="fb">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="" class="icon" id="tw">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="icon" id="in">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="icon" id="wh">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="" class="icon" id="te">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="overlay" onclick="closeModel()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
